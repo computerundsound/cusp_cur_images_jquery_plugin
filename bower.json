@@ -1,0 +1,13 @@
+{
+  "name": "cusp_cur_images_jquery_plugin",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jörg Wrase / computerundsound"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/computerundsound/cur_photo_jQueryPlugin",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

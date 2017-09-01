@@ -1,0 +1,22 @@
+{
+  "name": "cur_photo_jquery_plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/computerundsound/cur_photo_jQueryPlugin.git"
+  },
+  "author": "Jörg Wrase / computerundsound",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/computerundsound/cur_photo_jQueryPlugin/issues"
+  },
+  "homepage": "https://github.com/computerundsound/cur_photo_jQueryPlugin#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.2.9"
+  }
+}

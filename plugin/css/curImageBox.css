@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*!
+ * Copyright by J├Ârg Wrase - www.Computer-Und-Sound.de
+ * Hire me! coder@cusp.de
+ *
+ * LastModified: 2017.07.23 at 01:04 MESZ
+ */
+/* line 10, curImageBox.scss */
+#curImageBoxViewer {
+  top: 0;
+  left: 0;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #929292;
+  z-index: 9999;
+  opacity: 0.2;
+}
+/* line 21, curImageBox.scss */
+#curImageBoxViewer .curImageBoxViewer_imageWrapper {
+  width: 80%;
+  height: 80%;
+  margin: 2rem auto auto;
+}
+/* line 26, curImageBox.scss */
+#curImageBoxViewer .curImageBoxViewer_imageWrapper img {
+  display: block;
+  margin: auto;
+}
