@@ -25,11 +25,28 @@
 
     img {
 
-      display   : block;
-      margin    : auto;
+      display : block;
+      margin  : auto;
 
     }
 
+  }
+
+  .curImageBoxViewer_close {
+    position         : absolute;
+    background-color : #ECECEC;
+    color            : grey;
+    font-size        : 16px;
+    right            : 1rem;
+    top              : 1rem;
+    padding          : 0.5rem;
+    transition       : background-color 1s, color 1s;
+    &:hover {
+      cursor           : pointer;
+      background-color : white;
+      color            : black;
+      transition       : background-color 0.4s, color 0.4s;
+    }
   }
 
 }

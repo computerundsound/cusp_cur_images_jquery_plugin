@@ -7,6 +7,7 @@
 (function ($) {
     var markup = '<div id="curImageBoxViewer"> \
                     <div class="curImageBoxViewer_imageWrapper">\
+                    <div class="curImageBoxViewer_close">[x]</div>\
                         <img id="curImageBoxViewer_img" src="">\
                     </div>\
                   </div>';
@@ -32,8 +33,6 @@
         var wrapperWidth = $wrapper.width();
         var wrapperHeight = $wrapper.height();
         var ratio = imageWidth / imageHeight;
-        console.log(wrapperWidth);
-        console.log(wrapperHeight);
         var newWidth = wrapperWidth;
         var newHeight = newWidth / ratio;
         if (newHeight > wrapperHeight) {
@@ -46,12 +45,23 @@
         };
         return cuSizeObject;
     }
+    function bindCloseBtn($curImageBoxViewer, $body) {
+        $(".curImageBoxViewer_close").on("click", function () {
+            closeImageBox($curImageBoxViewer, $body);
+        });
+    }
+    function closeImageBox($curImageBoxViewer, $body) {
+        $curImageBoxViewer.css("display", "none");
+        $curImageBoxViewer.css("opacity", 0);
+        $body.off("keyup");
+    }
     $.fn.curImageBox = function (options) {
+        if (options === void 0) { options = {}; }
         var optionsDefault = {
             fadeInTimeMS: 400,
             backgroundColor: "rgba(80,80,80,0.75)"
         };
-        var optionsReal = $.extend(options, optionsDefault);
+        var optionsReal = $.extend(optionsDefault, options);
         return this.each(function () {
             $(this).on("click", function (event) {
                 event.preventDefault();
@@ -64,6 +74,7 @@
                 if ($curImageBoxViewer.length === 0) {
                     $body.append(markup);
                     $curImageBoxViewer = $("#curImageBoxViewer");
+                    bindCloseBtn($curImageBoxViewer, $body);
                 }
                 var $curImageBoxViewerWrapper = $curImageBoxViewer.find(".curImageBoxViewer_imageWrapper");
                 var $img = $("#curImageBoxViewer_img");
@@ -82,9 +93,7 @@
                         // noinspection SwitchStatementWithNoDefaultBranchJS
                         switch (event.keyCode) {
                             case 27:
-                                $curImageBoxViewer.css("display", "none");
-                                $curImageBoxViewer.css("opacity", 0);
-                                $body.off("keyup");
+                                closeImageBox($curImageBoxViewer, $body);
                                 break;
                             case 37:
                                 currentImageIndex = (currentImageIndex - 1 < 0) ?

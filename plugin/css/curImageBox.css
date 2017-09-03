@@ -28,3 +28,21 @@
   display: block;
   margin: auto;
 }
+/* line 35, curImageBox.scss */
+#curImageBoxViewer .curImageBoxViewer_close {
+  position: absolute;
+  background-color: #ECECEC;
+  color: grey;
+  font-size: 16px;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  transition: background-color 1s, color 1s;
+}
+/* line 44, curImageBox.scss */
+#curImageBoxViewer .curImageBoxViewer_close:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.4s, color 0.4s;
+}

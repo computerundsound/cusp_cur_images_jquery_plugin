@@ -25,7 +25,11 @@
 
         $(function () {
 
-            $("a[data-curImageBox]").curImageBox();
+            /* The options are optional */
+            $("a[data-curImageBox]").curImageBox({
+                                                     fadeInTimeMS:    500,
+                                                     backgroundColor: "rgba(0,0,50,0.9)"
+                                                 });
 
         });
 
