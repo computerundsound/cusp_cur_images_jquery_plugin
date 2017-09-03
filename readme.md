@@ -10,6 +10,10 @@ Click on a picture - press ESC to leave the CurImageBox - use the arrow-keys (le
 
 ## Basic Installation
 
+### Use Bower 
+        bower install --save cusp_cur_images_jquery_plugin
+
+If you don't want to use bower, make shure, jquery is loaded befor curImage - Plugin is loaded.
 You need jquery to be loaded already.
 Copy the Files form the "plugin" - Folder on your Webspace
 Include the plugin/css/curImageBoxViewer.css - File and the *.js - Scripts from the folder plugin/ to your Webpage.
