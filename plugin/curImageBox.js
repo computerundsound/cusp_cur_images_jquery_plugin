@@ -117,3 +117,4 @@
         });
     };
 })(jQuery);
+//# sourceMappingURL=curImageBox.js.map

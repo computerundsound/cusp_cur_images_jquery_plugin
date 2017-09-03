@@ -41,7 +41,6 @@
     function loadImage($image, foundImages, currentImageIndex) {
 
         $image.src = foundImages[currentImageIndex];
-
     }
 
     function getSize(imageWidth, imageHeight, $wrapper): { newWidth: number; newHeight: number } {
