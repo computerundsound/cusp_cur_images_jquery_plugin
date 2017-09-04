@@ -30,7 +30,7 @@
             /* The options are optional */
             $("a[data-curImageBox]").curImageBox({
                                                      fadeInTimeMS   : 500,
-                                                     backgroundColor: "rgba(0,0,50,0.9)"
+                                                     backgroundColor: "rgba(0,0,50,0.6)"
                                                  });
 
         });
@@ -52,7 +52,8 @@
     <h1>curImageBox - jquery Plugin</h1>
 
     <p class="lead">You will find installation instructions and further information in the
-        <a href="../readme.md" target="_blank">readme.md-File</a>
+        <a href="https://github.com/computerundsound/cusp_cur_images_jquery_plugin#curimagebox---jquery-plugin"
+           target="_blank">readme.md-File</a>
     </p>
 
 
