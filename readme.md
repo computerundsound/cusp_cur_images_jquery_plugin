@@ -1,8 +1,9 @@
-# curImageBox - jquery Plugin
+
+# curImageBox - jquery Plugin [create an anchor](#start_readme)
 
 This is a very small jQuery-Plugin to show your Images in a forground, when you click them.
 
-It is very easy to use - and I know - not much configurable. But for me it works fine - maybe for you to
+It is very easy to use.
 
 ## Using:
 

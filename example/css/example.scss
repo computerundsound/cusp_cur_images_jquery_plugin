@@ -1,0 +1,51 @@
+@import "compass";
+@import "compass/css3";
+
+.cuContainer {
+  background-color : #E6E6E6;
+  color            : #1C1C1C;
+  width            : 750px;
+  border-left      : 1px solid grey;
+  border-right     : 1px solid grey;
+  font-family      : Arial, Helvetica, Verdana, sans-serif;
+  padding          : 1rem;
+  margin           : auto;
+}
+
+pre {
+  padding          : 1rem;
+  background-color : white;
+  font-family      : "Courier New", monospace;
+}
+
+.cuImportant {
+  color : red;
+}
+
+.left {
+  float : left;
+}
+
+.right {
+  float : right;
+}
+
+.head {
+  clear            : both;
+  margin-bottom    : 1.5rem;
+  background-color : #FDFDFD !important;
+
+  &:after {
+    content    : ".";
+    display    : block;
+    height     : 0;
+    visibility : hidden;
+    clear      : both;
+  }
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration : none;
+  color           : darkred;
+
+}

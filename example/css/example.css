@@ -1,0 +1,54 @@
+/* line 4, example.scss */
+.cuContainer {
+  background-color: #E6E6E6;
+  color: #1C1C1C;
+  width: 750px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  padding: 1rem;
+  margin: auto;
+}
+
+/* line 15, example.scss */
+pre {
+  padding: 1rem;
+  background-color: white;
+  font-family: "Courier New", monospace;
+}
+
+/* line 21, example.scss */
+.cuImportant {
+  color: red;
+}
+
+/* line 25, example.scss */
+.left {
+  float: left;
+}
+
+/* line 29, example.scss */
+.right {
+  float: right;
+}
+
+/* line 33, example.scss */
+.head {
+  clear: both;
+  margin-bottom: 1.5rem;
+  background-color: #FDFDFD !important;
+}
+/* line 38, example.scss */
+.head:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+/* line 47, example.scss */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: darkred;
+}
